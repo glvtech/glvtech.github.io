@@ -3,11 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>GLVTECH | Portfólio de Montagens</title>
-  <meta name="description" content="Veja os PCs gamers e computadores montados pela GLVTECH em São Paulo. Confira as especificações e solicite seu orçamento." />
-  <meta name="robots" content="index, follow" />
-  <link rel="canonical" href="https://glvtech.github.io/glvtech-page/portfolio.html" />
-
+  <title>GLVTECH | Portfólio</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
   <style>
     :root {
@@ -130,47 +126,6 @@
       transform: scale(1.05);
     }
 
-    /* ====== SIGA-NOS ====== */
-    .social {
-      text-align: center;
-      margin: 40px auto 0;
-    }
-
-    .social h3 {
-      font-size: 0.85rem;
-      letter-spacing: 1px;
-      margin-bottom: 15px;
-      color: var(--preto);
-    }
-
-    .social-links {
-      display: flex;
-      justify-content: center;
-      gap: 28px;
-      flex-wrap: wrap;
-    }
-
-    .social a {
-      display: inline-flex;
-      align-items: center;
-      gap: 10px;
-      text-decoration: none;
-      color: var(--preto);
-      font-weight: 500;
-      font-size: 0.95rem;
-      transition: color 0.3s ease, transform 0.2s ease;
-    }
-
-    .social a img {
-      width: 18px;
-      height: 18px;
-    }
-
-    .social a:hover {
-      color: var(--azul);
-      transform: translateX(4px);
-    }
-
     footer {
       background: var(--preto);
       color: #fff;
@@ -179,45 +134,39 @@
       font-size: 0.9rem;
     }
 
-    /* ====== BOTÃO WHATSAPP FLUTUANTE ====== */
-    .whatsapp-float {
-      position: fixed;
-      bottom: 28px;
-      right: 28px;
-      background: #25d366;
-      color: #fff;
-      border-radius: 50px;
-      padding: 14px 22px;
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      text-decoration: none;
-      font-weight: 600;
-      font-size: 0.95rem;
-      box-shadow: 0 4px 18px rgba(37,211,102,0.45);
-      z-index: 999;
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
-    }
+    /* ====== SIGA-NOS ====== */
+.social {
+  text-align: center;
+  margin: 40px auto 0;
+}
 
-    .whatsapp-float:hover {
-      transform: scale(1.06);
-      box-shadow: 0 6px 24px rgba(37,211,102,0.6);
-    }
+.social h3 {
+  font-size: 0.85rem;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+  color: var(--preto);
+}
 
-    .whatsapp-float img {
-      width: 22px;
-      height: 22px;
-    }
+.social a {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: var(--preto);
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
 
-    @media (max-width: 480px) {
-      .whatsapp-float span {
-        display: none;
-      }
-      .whatsapp-float {
-        padding: 16px;
-        border-radius: 50%;
-      }
-    }
+.social a img {
+  width: 18px;
+  height: 18px;
+}
+
+.social a:hover {
+  color: var(--azul);
+  transform: translateX(4px);
+}
   </style>
 </head>
 <body>
@@ -227,6 +176,7 @@
   <nav class="menu">
     <a href="index.html">Home</a>
     <a href="portfolio.html" class="active">Portfólio</a>
+    <a href="precos.html">Preços</a>
     <a href="contato.html">Contato</a>
   </nav>
 </header>
@@ -236,7 +186,7 @@
 
   <div class="portfolio">
     <div class="item-portfolio">
-      <img src="imagens/pcgamer1.jpeg" alt="PC Gamer GLVTECH — Ryzen 5 5500 com RTX 3060">
+      <img src="imagens/pcgamer1.jpeg" alt="PC Gamer GLVTECH">
       <div class="specs-box">
         <ul class="specs">
           <li><strong>Processador:</strong> Ryzen 5 5500</li>
@@ -247,12 +197,12 @@
           <li><strong>Fonte:</strong> Corsair CV650</li>
           <li><strong>Gabinete:</strong> Hayom Aquario</li>
         </ul>
-        <a class="btn-whatsapp" href="https://wa.me/5511940857403?text=Olá!%20Tenho%20interesse%20em%20uma%20montagem%20similar%20ao%20PC%20com%20Ryzen%205%205500%20e%20RTX%203060." target="_blank">Solicitar orçamento</a>
+        <a class="btn-whatsapp" href="https://wa.me/5511940857403" target="_blank">Solicitar orçamento</a>
       </div>
     </div>
 
     <div class="item-portfolio">
-      <img src="imagens/pcgamer2.jpeg" alt="PC Gamer GLVTECH — Ryzen 7 9700X com RX 9070 XT">
+      <img src="imagens/pcgamer2.jpeg" alt="PC Gamer GLVTECH">
       <div class="specs-box">
         <ul class="specs">
           <li><strong>Processador:</strong> Ryzen 7 9700X</li>
@@ -263,7 +213,7 @@
           <li><strong>Fonte:</strong> Cooler Master 850W Gold</li>
           <li><strong>Water Cooler:</strong> 360mm</li>
         </ul>
-        <a class="btn-whatsapp" href="https://wa.me/5511940857403?text=Olá!%20Tenho%20interesse%20em%20uma%20montagem%20similar%20ao%20PC%20com%20Ryzen%207%209700X%20e%20RX%209070%20XT." target="_blank">Solicitar orçamento</a>
+        <a class="btn-whatsapp" href="https://wa.me/5511940857403" target="_blank">Solicitar orçamento</a>
       </div>
     </div>
   </div>
@@ -271,27 +221,18 @@
 
 <section class="social">
   <h3>SIGA-NOS</h3>
-  <div class="social-links">
-    <a href="https://www.instagram.com/glvtec/" target="_blank" aria-label="Instagram da GLVTECH">
-      <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/instagram.svg" alt="">
-      @glvtec
-    </a>
-    <a href="https://www.tiktok.com/@glvtech03" target="_blank" aria-label="TikTok da GLVTECH">
-      <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/tiktok.svg" alt="">
-      @glvtech03
-    </a>
-  </div>
+
+  <a href="https://www.instagram.com/glvtech/"
+     target="_blank"
+     aria-label="Instagram da GLVTECH">
+    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/instagram.svg" alt="">
+    Instagram
+  </a>
 </section>
 
 <footer>
-  © 2026 GLVTECH — Todos os direitos reservados · São Paulo, SP
+  © 2026 GLVTECH — Todos os direitos reservados
 </footer>
-
-<!-- BOTÃO WHATSAPP FLUTUANTE -->
-<a href="https://wa.me/5511940857403?text=Olá!%20Gostaria%20de%20um%20orçamento." class="whatsapp-float" target="_blank" aria-label="Fale conosco pelo WhatsApp">
-  <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/whatsapp.svg" alt="">
-  <span>Fale conosco</span>
-</a>
 
 </body>
 </html>

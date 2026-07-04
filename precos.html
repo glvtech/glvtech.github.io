@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GLVTECH | Preços</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --azul: #1e88e5;
+      --preto: #111;
+      --cinza: #f2f2f2;
+      --cinza-escuro: #444;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      background: var(--cinza);
+      color: var(--preto);
+      line-height: 1.6;
+    }
+
+    header {
+      background: #fff;
+      padding: 40px 20px 25px;
+      text-align: center;
+    }
+
+    header img {
+      max-width: 130px;
+      margin-bottom: 15px;
+    }
+
+    .menu {
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    .menu a {
+      text-decoration: none;
+      font-weight: 600;
+      color: var(--preto);
+      padding-bottom: 4px;
+    }
+
+    .menu a.active {
+      color: var(--azul);
+      border-bottom: 2px solid var(--azul);
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    h2 {
+      text-align: center;
+      color: var(--azul);
+      margin-bottom: 15px;
+    }
+
+    .aviso {
+      text-align: center;
+      color: var(--cinza-escuro);
+      max-width: 600px;
+      margin: 0 auto 40px;
+      font-size: 0.95rem;
+    }
+
+    .grupo {
+      background: #fff;
+      border-radius: 14px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.06);
+      margin-bottom: 30px;
+      overflow: hidden;
+    }
+
+    .grupo h3 {
+      background: var(--azul);
+      color: #fff;
+      padding: 14px 20px;
+      font-size: 1.1rem;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    td {
+      padding: 14px 20px;
+      border-bottom: 1px solid #eee;
+    }
+
+    td:last-child {
+      text-align: right;
+      font-weight: 600;
+      color: var(--azul);
+      white-space: nowrap;
+    }
+
+    tr:last-child td {
+      border-bottom: none;
+    }
+
+    .nota {
+      text-align: center;
+      margin-top: 10px;
+      color: var(--cinza-escuro);
+      font-size: 0.85rem;
+    }
+
+    .btn-whatsapp {
+      display: block;
+      width: fit-content;
+      margin: 30px auto 0;
+      background: var(--azul);
+      color: #fff;
+      padding: 14px 32px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background 0.3s ease, transform 0.2s ease;
+    }
+
+    .btn-whatsapp:hover {
+      background: #1565c0;
+      transform: scale(1.05);
+    }
+
+    footer {
+      background: var(--preto);
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+    }
+
+    .social {
+      text-align: center;
+      margin: 10px auto 0;
+    }
+
+    .social h3 {
+      font-size: 0.85rem;
+      letter-spacing: 1px;
+      margin-bottom: 15px;
+      color: var(--preto);
+    }
+
+    .social a {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      color: var(--preto);
+      font-weight: 500;
+      font-size: 0.95rem;
+      transition: color 0.3s ease, transform 0.2s ease;
+    }
+
+    .social a img {
+      width: 18px;
+      height: 18px;
+    }
+
+    .social a:hover {
+      color: var(--azul);
+      transform: translateX(4px);
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <img src="logo.png" alt="GLVTECH Logo">
+  <nav class="menu">
+    <a href="index.html">Home</a>
+    <a href="portfolio.html">Portfólio</a>
+    <a href="precos.html" class="active">Preços</a>
+    <a href="contato.html">Contato</a>
+  </nav>
+</header>
+
+<section>
+  <h2>Tabela de Preços</h2>
+  <p class="aviso">
+    Valores referentes à mão de obra. Peças e componentes são sempre orçados
+    separadamente antes de qualquer compra. Diagnóstico é gratuito.
+  </p>
+
+  <div class="grupo">
+    <h3>Manutenção</h3>
+    <table>
+      <tr><td>Diagnóstico</td><td>Grátis</td></tr>
+      <tr><td>Limpeza interna + pasta térmica (Desktop)</td><td>R$ 60 – 80</td></tr>
+      <tr><td>Limpeza interna + pasta térmica (Notebook)</td><td>R$ 80 – 120</td></tr>
+      <tr><td>Manutenção preventiva completa</td><td>R$ 100 – 150</td></tr>
+      <tr><td>Manutenção corretiva</td><td>R$ 80 – 200</td></tr>
+      <tr><td>Formatação + instalação de sistema</td><td>R$ 70 – 100</td></tr>
+      <tr><td>Backup e recuperação de dados</td><td>R$ 100 – 250</td></tr>
+    </table>
+  </div>
+
+  <div class="grupo">
+    <h3>Montagem e Upgrades</h3>
+    <table>
+      <tr><td>Montagem de PC (mão de obra)</td><td>R$ 100 – 150</td></tr>
+      <tr><td>Upgrade de RAM ou SSD (instalação)</td><td>R$ 40 – 60</td></tr>
+      <tr><td>Troca de placa de vídeo ou fonte</td><td>R$ 50 – 80</td></tr>
+      <tr><td>Consultoria para build personalizada</td><td>R$ 50*</td></tr>
+    </table>
+  </div>
+
+  <div class="grupo">
+    <h3>Notebooks</h3>
+    <table>
+      <tr><td>Troca de teclado (+ peça)</td><td>R$ 80 – 150</td></tr>
+      <tr><td>Troca de tela (+ peça)</td><td>R$ 100 – 200</td></tr>
+      <tr><td>Limpeza + troca de pasta térmica</td><td>R$ 80 – 120</td></tr>
+    </table>
+  </div>
+
+  <p class="nota">*Valor abatido do orçamento final caso o serviço seja fechado.</p>
+  <p class="nota">PIX à vista com 10% de desconto, ou cartão em até 10x sem juros.</p>
+
+  <a class="btn-whatsapp" href="contato.html">Solicitar orçamento</a>
+</section>
+
+<section class="social">
+  <h3>SIGA-NOS</h3>
+  <a href="https://www.instagram.com/glvtec/" target="_blank" aria-label="Instagram da GLVTECH">
+    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/instagram.svg" alt="">
+    Instagram
+  </a>
+</section>
+
+<footer>
+  © 2026 GLVTECH — Todos os direitos reservados
+</footer>
+
+</body>
+</html>
