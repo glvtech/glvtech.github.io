@@ -170,9 +170,25 @@
     <label for="servico">Tipo de serviço</label>
     <select id="servico" required>
       <option value="">Selecione um serviço</option>
-      <option value="Montagem de PC">Montagem de PC</option>
-      <option value="Manutenção Preventiva">Manutenção Preventiva</option>
-      <option value="Manutenção Corretiva">Manutenção Corretiva</option>
+      <optgroup label="Manutenção">
+        <option value="Limpeza interna + pasta térmica (Desktop)">Limpeza interna + pasta térmica (Desktop)</option>
+        <option value="Limpeza interna + pasta térmica (Notebook)">Limpeza interna + pasta térmica (Notebook)</option>
+        <option value="Manutenção Preventiva">Manutenção Preventiva</option>
+        <option value="Manutenção Corretiva">Manutenção Corretiva</option>
+        <option value="Formatação + instalação de sistema">Formatação + instalação de sistema</option>
+        <option value="Backup e recuperação de dados">Backup e recuperação de dados</option>
+      </optgroup>
+      <optgroup label="Montagem e Upgrades">
+        <option value="Montagem de PC">Montagem de PC</option>
+        <option value="Upgrade de RAM ou SSD">Upgrade de RAM ou SSD</option>
+        <option value="Troca de placa de vídeo ou fonte">Troca de placa de vídeo ou fonte</option>
+        <option value="Consultoria para build personalizada">Consultoria para build personalizada</option>
+      </optgroup>
+      <optgroup label="Notebooks">
+        <option value="Troca de teclado">Troca de teclado</option>
+        <option value="Troca de tela">Troca de tela</option>
+        <option value="Limpeza + troca de pasta térmica (Notebook)">Limpeza + troca de pasta térmica (Notebook)</option>
+      </optgroup>
       <option value="Outro">Outro</option>
     </select>
 
