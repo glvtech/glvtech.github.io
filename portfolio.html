@@ -3,236 +3,119 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>GLVTECH | Portfólio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <style>
-    :root {
-      --azul: #1e88e5;
-      --preto: #111;
-      --cinza: #f2f2f2;
-    }
-
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Inter', sans-serif;
-    }
-
-    body {
-      background: var(--cinza);
-      color: var(--preto);
-    }
-
-    header {
-      background: #fff;
-      padding: 40px 20px 25px;
-      text-align: center;
-    }
-
-    header img {
-      max-width: 130px;
-      margin-bottom: 15px;
-    }
-
-    .menu {
-      margin-top: 20px;
-      display: flex;
-      justify-content: center;
-      gap: 30px;
-    }
-
-    .menu a {
-      text-decoration: none;
-      font-weight: 600;
-      color: var(--preto);
-      padding-bottom: 4px;
-    }
-
-    .menu a.active {
-      color: var(--azul);
-      border-bottom: 2px solid var(--azul);
-    }
-
-    section {
-      padding: 60px 20px;
-      max-width: 1100px;
-      margin: auto;
-    }
-
-    h2 {
-      text-align: center;
-      color: var(--azul);
-      margin-bottom: 40px;
-    }
-
-    .portfolio {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 30px;
-    }
-
-    .item-portfolio {
-      background: #fff;
-      border-radius: 14px;
-      overflow: hidden;
-      box-shadow: 0 5px 20px rgba(0,0,0,0.06);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-
-    .item-portfolio:hover {
-      transform: translateY(-6px);
-      box-shadow: 0 12px 30px rgba(0,0,0,0.15);
-    }
-
-    .item-portfolio img {
-      width: 100%;
-      aspect-ratio: 1 / 1;
-      object-fit: contain;
-      background: #000;
-    }
-
-    .specs-box {
-      padding: 18px;
-    }
-
-    .specs {
-      list-style: none;
-      font-size: 0.95rem;
-    }
-
-    .specs li {
-      margin-bottom: 6px;
-    }
-
-    .specs strong {
-      color: var(--azul);
-    }
-
-    .btn-whatsapp {
-      display: inline-block;
-      margin-top: 15px;
-      background: var(--azul);
-      color: #fff;
-      padding: 10px 22px;
-      border-radius: 25px;
-      text-decoration: none;
-      font-weight: 600;
-      transition: background 0.3s ease, transform 0.2s ease;
-    }
-
-    .btn-whatsapp:hover {
-      background: #1565c0;
-      transform: scale(1.05);
-    }
-
-    footer {
-      background: var(--preto);
-      color: #fff;
-      text-align: center;
-      padding: 20px;
-      font-size: 0.9rem;
-    }
-
-    /* ====== SIGA-NOS ====== */
-.social {
-  text-align: center;
-  margin: 40px auto 0;
-}
-
-.social h3 {
-  font-size: 0.85rem;
-  letter-spacing: 1px;
-  margin-bottom: 15px;
-  color: var(--preto);
-}
-
-.social a {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  text-decoration: none;
-  color: var(--preto);
-  font-weight: 500;
-  font-size: 0.95rem;
-  transition: color 0.3s ease, transform 0.2s ease;
-}
-
-.social a img {
-  width: 18px;
-  height: 18px;
-}
-
-.social a:hover {
-  color: var(--azul);
-  transform: translateX(4px);
-}
-  </style>
+  <title>Portfólio de PCs montados | GLVTECH</title>
+  <meta name="description" content="Veja PCs gamer montados pela GLVTECH em São Paulo, com especificações completas. Peça um orçamento para o seu." />
+  <link rel="canonical" href="https://glvtech.github.io/glvtech-page/portfolio.html" />
+  <link rel="icon" href="logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-<header>
-  <img src="logo.png" alt="GLVTECH Logo">
-  <nav class="menu">
-    <a href="index.html">Home</a>
-    <a href="portfolio.html" class="active">Portfólio</a>
-    <a href="precos.html">Preços</a>
-    <a href="contato.html">Contato</a>
-  </nav>
+<header class="topo">
+  <div class="wrap">
+    <a href="index.html" class="marca" aria-label="GLVTECH — início">
+      <img src="logo.png" alt="" />
+      <span>GLV<b>TECH</b></span>
+    </a>
+    <nav class="menu" aria-label="Principal">
+      <a href="index.html">Home</a>
+      <a href="portfolio.html" class="ativo">Portfólio</a>
+      <a href="precos.html">Preços</a>
+      <a href="contato.html">Contato</a>
+    </nav>
+    <a class="btn pequeno" href="contato.html">Pedir orçamento</a>
+  </div>
 </header>
 
-<section>
-  <h2>Portfólio de PCs</h2>
-
-  <div class="portfolio">
-    <div class="item-portfolio">
-      <img src="imagens/pcgamer1.jpeg" alt="PC Gamer GLVTECH">
-      <div class="specs-box">
-        <ul class="specs">
-          <li><strong>Processador:</strong> Ryzen 5 5500</li>
-          <li><strong>Placa de Vídeo:</strong> RTX 3060 12GB</li>
-          <li><strong>Placa-mãe:</strong> MSI A520M-A PRO</li>
-          <li><strong>Memória:</strong> 32GB DDR4</li>
-          <li><strong>Armazenamento:</strong> SSD NVMe 256GB</li>
-          <li><strong>Fonte:</strong> Corsair CV650</li>
-          <li><strong>Gabinete:</strong> Hayom Aquario</li>
-        </ul>
-        <a class="btn-whatsapp" href="https://wa.me/5511940857403" target="_blank">Solicitar orçamento</a>
-      </div>
+<main>
+  <section class="titulo-pagina">
+    <div class="wrap">
+      <h1>PCs montados na GLVTECH</h1>
+      <p>Configurações reais, entregues a clientes. Quer algo parecido ou totalmente diferente? Eu monto do seu jeito.</p>
     </div>
+  </section>
 
-    <div class="item-portfolio">
-      <img src="imagens/pcgamer2.jpeg" alt="PC Gamer GLVTECH">
-      <div class="specs-box">
-        <ul class="specs">
-          <li><strong>Processador:</strong> Ryzen 7 9700X</li>
-          <li><strong>Placa de Vídeo:</strong> RX 9070 XT</li>
-          <li><strong>Placa-mãe:</strong> ASRock X870 Pro RS WiFi</li>
-          <li><strong>Memória:</strong> 32GB DDR5</li>
-          <li><strong>Armazenamento:</strong> SSD NVMe 2TB</li>
-          <li><strong>Fonte:</strong> Cooler Master 850W Gold</li>
-          <li><strong>Water Cooler:</strong> 360mm</li>
-        </ul>
-        <a class="btn-whatsapp" href="https://wa.me/5511940857403" target="_blank">Solicitar orçamento</a>
+  <section class="wrap">
+    <article class="build">
+      <div class="foto">
+        <img src="imagens/pcgamer1.jpeg" alt="PC gamer com Ryzen 5 5500 e RTX 3060 12GB montado pela GLVTECH" loading="lazy" />
       </div>
+      <div>
+        <h2>Ryzen 5 + RTX 3060</h2>
+        <p class="tag">PC gamer para jogar em Full HD com bom custo-benefício.</p>
+        <dl class="ficha">
+          <div><dt>Processador</dt><dd>Ryzen 5 5500</dd></div>
+          <div><dt>Placa de vídeo</dt><dd>RTX 3060 12GB</dd></div>
+          <div><dt>Placa-mãe</dt><dd>MSI A520M-A PRO</dd></div>
+          <div><dt>Memória</dt><dd>32GB DDR4</dd></div>
+          <div><dt>Armazenamento</dt><dd>SSD NVMe 256GB</dd></div>
+          <div><dt>Fonte</dt><dd>Corsair CV650</dd></div>
+          <div><dt>Gabinete</dt><dd>Hayom Aquario</dd></div>
+        </dl>
+        <a class="btn" href="https://wa.me/5511940857403?text=Ol%C3%A1!%20Quero%20um%20or%C3%A7amento%20de%20um%20PC%20parecido%20com%20o%20Ryzen%205%205500%20%2B%20RTX%203060." target="_blank" rel="noopener">Quero um PC assim</a>
+      </div>
+    </article>
+
+    <article class="build">
+      <div class="foto">
+        <img src="imagens/pcgamer2.jpeg" alt="PC gamer com Ryzen 7 9700X e RX 9070 XT montado pela GLVTECH" loading="lazy" />
+      </div>
+      <div>
+        <h2>Ryzen 7 + RX 9070 XT</h2>
+        <p class="tag">Configuração de alto desempenho para jogos e trabalho pesado.</p>
+        <dl class="ficha">
+          <div><dt>Processador</dt><dd>Ryzen 7 9700X</dd></div>
+          <div><dt>Placa de vídeo</dt><dd>RX 9070 XT</dd></div>
+          <div><dt>Placa-mãe</dt><dd>ASRock X870 Pro RS WiFi</dd></div>
+          <div><dt>Memória</dt><dd>32GB DDR5</dd></div>
+          <div><dt>Armazenamento</dt><dd>SSD NVMe 2TB</dd></div>
+          <div><dt>Fonte</dt><dd>Cooler Master 850W Gold</dd></div>
+          <div><dt>Refrigeração</dt><dd>Water cooler 360mm</dd></div>
+        </dl>
+        <a class="btn" href="https://wa.me/5511940857403?text=Ol%C3%A1!%20Quero%20um%20or%C3%A7amento%20de%20um%20PC%20parecido%20com%20o%20Ryzen%207%209700X%20%2B%20RX%209070%20XT." target="_blank" rel="noopener">Quero um PC assim</a>
+      </div>
+    </article>
+  </section>
+
+  <section class="faixa">
+    <div class="wrap">
+      <div>
+        <h2>Seu PC pode ser o próximo.</h2>
+        <p>Diga o uso e o orçamento. Eu indico as peças.</p>
+      </div>
+      <a class="btn claro" href="contato.html">Pedir orçamento</a>
+    </div>
+  </section>
+</main>
+
+<footer class="rodape">
+  <div class="wrap">
+    <div>
+      <div class="marca"><img src="logo.png" alt="" /><span>GLV<b>TECH</b></span></div>
+      <p>Montagem e manutenção de computadores<br>em São Paulo, SP.</p>
+    </div>
+    <div class="redes">
+      <a href="https://www.instagram.com/glvtec/" target="_blank" rel="noopener" aria-label="Instagram da GLVTECH">
+        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/instagram.svg" alt="" /> Instagram
+      </a>
+      <a href="https://www.tiktok.com/@glvtech03" target="_blank" rel="noopener" aria-label="TikTok da GLVTECH">
+        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/tiktok.svg" alt="" /> TikTok
+      </a>
+      <a href="https://wa.me/5511940857403" target="_blank" rel="noopener" aria-label="WhatsApp da GLVTECH">
+        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/whatsapp.svg" alt="" /> WhatsApp
+      </a>
     </div>
   </div>
-</section>
-
-<section class="social">
-  <h3>SIGA-NOS</h3>
-
-  <a href="https://www.instagram.com/glvtech/"
-     target="_blank"
-     aria-label="Instagram da GLVTECH">
-    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/instagram.svg" alt="">
-    Instagram
-  </a>
-</section>
-
-<footer>
-  © 2026 GLVTECH — Todos os direitos reservados
+  <div class="copy">© 2026 GLVTECH — Todos os direitos reservados</div>
 </footer>
+
+<a class="flutuante" href="https://wa.me/5511940857403" target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 3.5A11.9 11.9 0 0 0 12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6A12 12 0 0 0 12 24c6.6 0 12-5.4 12-12 0-3.2-1.2-6.2-3.5-8.5zM12 22c-1.8 0-3.6-.5-5.1-1.4l-.4-.2-3.700 1 1-3.600-.2-.4A10 10 0 0 1 2 12C2 6.500 6.500 2 12 2c2.700 0 5.200 1 7.100 2.900A10 10 0 0 1 22 12c0 5.500-4.500 10-10 10zm5.500-7.500c-.3-.2-1.800-.9-2-1-.3-.1-.5-.2-.7.2s-.8 1-.9 1.200c-.2.200-.3.200-.6.100-.3-.2-1.300-.5-2.400-1.500-.9-.8-1.500-1.800-1.700-2.100-.2-.3 0-.5.100-.6l.5-.5.300-.5c.1-.2 0-.4 0-.5l-.9-2.200c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.100-.8.400-.3.300-1 1-1 2.500s1.100 2.900 1.200 3.100c.2.200 2.100 3.200 5.100 4.500.7.300 1.300.5 1.700.6.700.2 1.400.2 1.900.1.600-.1 1.800-.7 2-1.400.3-.7.300-1.300.2-1.400-.1-.1-.3-.2-.6-.4z"/></svg>
+  <span>Falar no WhatsApp</span>
+</a>
 
 </body>
 </html>

@@ -3,250 +3,119 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>GLVTECH | Preços</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <style>
-    :root {
-      --azul: #1e88e5;
-      --preto: #111;
-      --cinza: #f2f2f2;
-      --cinza-escuro: #444;
-    }
-
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Inter', sans-serif;
-    }
-
-    body {
-      background: var(--cinza);
-      color: var(--preto);
-      line-height: 1.6;
-    }
-
-    header {
-      background: #fff;
-      padding: 40px 20px 25px;
-      text-align: center;
-    }
-
-    header img {
-      max-width: 130px;
-      margin-bottom: 15px;
-    }
-
-    .menu {
-      margin-top: 20px;
-      display: flex;
-      justify-content: center;
-      gap: 30px;
-    }
-
-    .menu a {
-      text-decoration: none;
-      font-weight: 600;
-      color: var(--preto);
-      padding-bottom: 4px;
-    }
-
-    .menu a.active {
-      color: var(--azul);
-      border-bottom: 2px solid var(--azul);
-    }
-
-    section {
-      padding: 60px 20px;
-      max-width: 900px;
-      margin: auto;
-    }
-
-    h2 {
-      text-align: center;
-      color: var(--azul);
-      margin-bottom: 15px;
-    }
-
-    .aviso {
-      text-align: center;
-      color: var(--cinza-escuro);
-      max-width: 600px;
-      margin: 0 auto 40px;
-      font-size: 0.95rem;
-    }
-
-    .grupo {
-      background: #fff;
-      border-radius: 14px;
-      box-shadow: 0 5px 20px rgba(0,0,0,0.06);
-      margin-bottom: 30px;
-      overflow: hidden;
-    }
-
-    .grupo h3 {
-      background: var(--azul);
-      color: #fff;
-      padding: 14px 20px;
-      font-size: 1.1rem;
-    }
-
-    table {
-      width: 100%;
-      border-collapse: collapse;
-    }
-
-    td {
-      padding: 14px 20px;
-      border-bottom: 1px solid #eee;
-    }
-
-    td:last-child {
-      text-align: right;
-      font-weight: 600;
-      color: var(--azul);
-      white-space: nowrap;
-    }
-
-    tr:last-child td {
-      border-bottom: none;
-    }
-
-    .nota {
-      text-align: center;
-      margin-top: 10px;
-      color: var(--cinza-escuro);
-      font-size: 0.85rem;
-    }
-
-    .btn-whatsapp {
-      display: block;
-      width: fit-content;
-      margin: 30px auto 0;
-      background: var(--azul);
-      color: #fff;
-      padding: 14px 32px;
-      border-radius: 30px;
-      text-decoration: none;
-      font-weight: 600;
-      transition: background 0.3s ease, transform 0.2s ease;
-    }
-
-    .btn-whatsapp:hover {
-      background: #1565c0;
-      transform: scale(1.05);
-    }
-
-    footer {
-      background: var(--preto);
-      color: #fff;
-      text-align: center;
-      padding: 20px;
-      font-size: 0.9rem;
-    }
-
-    .social {
-      text-align: center;
-      margin: 10px auto 0;
-    }
-
-    .social h3 {
-      font-size: 0.85rem;
-      letter-spacing: 1px;
-      margin-bottom: 15px;
-      color: var(--preto);
-    }
-
-    .social a {
-      display: inline-flex;
-      align-items: center;
-      gap: 10px;
-      text-decoration: none;
-      color: var(--preto);
-      font-weight: 500;
-      font-size: 0.95rem;
-      transition: color 0.3s ease, transform 0.2s ease;
-    }
-
-    .social a img {
-      width: 18px;
-      height: 18px;
-    }
-
-    .social a:hover {
-      color: var(--azul);
-      transform: translateX(4px);
-    }
-  </style>
+  <title>Tabela de preços | GLVTECH</title>
+  <meta name="description" content="Tabela de preços da GLVTECH em São Paulo: manutenção, montagem de PC, upgrades e notebooks. Diagnóstico grátis, PIX com 10% de desconto e cartão em até 10x sem juros." />
+  <link rel="canonical" href="https://glvtech.github.io/glvtech-page/precos.html" />
+  <link rel="icon" href="logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-<header>
-  <img src="logo.png" alt="GLVTECH Logo">
-  <nav class="menu">
-    <a href="index.html">Home</a>
-    <a href="portfolio.html">Portfólio</a>
-    <a href="precos.html" class="active">Preços</a>
-    <a href="contato.html">Contato</a>
-  </nav>
+<header class="topo">
+  <div class="wrap">
+    <a href="index.html" class="marca" aria-label="GLVTECH — início">
+      <img src="logo.png" alt="" />
+      <span>GLV<b>TECH</b></span>
+    </a>
+    <nav class="menu" aria-label="Principal">
+      <a href="index.html">Home</a>
+      <a href="portfolio.html">Portfólio</a>
+      <a href="precos.html" class="ativo">Preços</a>
+      <a href="contato.html">Contato</a>
+    </nav>
+    <a class="btn pequeno" href="contato.html">Pedir orçamento</a>
+  </div>
 </header>
 
-<section>
-  <h2>Tabela de Preços</h2>
-  <p class="aviso">
-    Valores referentes à mão de obra. Peças e componentes são sempre orçados
-    separadamente antes de qualquer compra. Diagnóstico é gratuito.
-  </p>
+<main>
+  <section class="titulo-pagina">
+    <div class="wrap">
+      <h1>Tabela de preços</h1>
+      <p>Valores de mão de obra. Peças e componentes são sempre orçados separadamente antes de qualquer compra. O diagnóstico é gratuito.</p>
+    </div>
+  </section>
 
-  <div class="grupo">
-    <h3>Manutenção</h3>
-    <table>
-      <tr><td>Diagnóstico</td><td>Grátis</td></tr>
-      <tr><td>Limpeza interna + pasta térmica (Desktop)</td><td>R$ 60 – 80</td></tr>
-      <tr><td>Limpeza interna + pasta térmica (Notebook)</td><td>R$ 80 – 120</td></tr>
-      <tr><td>Manutenção preventiva completa</td><td>R$ 100 – 150</td></tr>
-      <tr><td>Manutenção corretiva</td><td>R$ 80 – 200</td></tr>
-      <tr><td>Formatação + instalação de sistema</td><td>R$ 70 – 100</td></tr>
-      <tr><td>Backup e recuperação de dados</td><td>R$ 100 – 250</td></tr>
-    </table>
+  <section class="wrap">
+    <div class="preco-grupo">
+      <div>
+        <h2>Manutenção</h2>
+        <p>Limpeza, revisão e conserto para deixar o equipamento rápido e seguro.</p>
+      </div>
+      <dl class="linhas">
+          <div><dt>Diagnóstico</dt><dd class="gratis">Grátis</dd></div>
+          <div><dt>Limpeza interna + pasta térmica (Desktop)</dt><dd>R$ 60 – 80</dd></div>
+          <div><dt>Limpeza interna + pasta térmica (Notebook)</dt><dd>R$ 80 – 120</dd></div>
+          <div><dt>Manutenção preventiva completa</dt><dd>R$ 100 – 150</dd></div>
+          <div><dt>Manutenção corretiva</dt><dd>R$ 80 – 200</dd></div>
+          <div><dt>Formatação + instalação de sistema</dt><dd>R$ 70 – 100</dd></div>
+          <div><dt>Backup e recuperação de dados</dt><dd>R$ 100 – 250</dd></div>
+      </dl>
+    </div>
+    <div class="preco-grupo">
+      <div>
+        <h2>Montagem e upgrades</h2>
+        <p>Do PC novo à troca de peças no computador que você já tem.</p>
+      </div>
+      <dl class="linhas">
+          <div><dt>Montagem de PC (mão de obra)</dt><dd>R$ 100 – 150</dd></div>
+          <div><dt>Upgrade de RAM ou SSD (instalação)</dt><dd>R$ 40 – 60</dd></div>
+          <div><dt>Troca de peças em geral</dt><dd>R$ 70 – 150</dd></div>
+          <div><dt>Consultoria para build personalizada</dt><dd>R$ 50*</dd></div>
+      </dl>
+    </div>
+    <div class="preco-grupo">
+      <div>
+        <h2>Notebooks</h2>
+        <p>Serviços específicos para notebooks. Peças orçadas à parte.</p>
+      </div>
+      <dl class="linhas">
+          <div><dt>Troca de teclado (+ peça)</dt><dd>R$ 80 – 150</dd></div>
+          <div><dt>Troca de tela (+ peça)</dt><dd>R$ 100 – 200</dd></div>
+          <div><dt>Limpeza + troca de pasta térmica</dt><dd>R$ 80 – 120</dd></div>
+      </dl>
+    </div>
+
+    <div class="avisos">
+      <p>*Valor abatido do orçamento final caso o serviço seja fechado.</p>
+      <p><strong>Pagamento:</strong> PIX à vista com 10% de desconto, ou cartão em até 10x sem juros.</p>
+    </div>
+  </section>
+
+  <section class="faixa">
+    <div class="wrap">
+      <div>
+        <h2>Não achou o seu caso?</h2>
+        <p>Descreva o problema e receba um orçamento sob medida.</p>
+      </div>
+      <a class="btn claro" href="contato.html">Pedir orçamento</a>
+    </div>
+  </section>
+</main>
+
+<footer class="rodape">
+  <div class="wrap">
+    <div>
+      <div class="marca"><img src="logo.png" alt="" /><span>GLV<b>TECH</b></span></div>
+      <p>Montagem e manutenção de computadores<br>em São Paulo, SP.</p>
+    </div>
+    <div class="redes">
+      <a href="https://www.instagram.com/glvtec/" target="_blank" rel="noopener" aria-label="Instagram da GLVTECH">
+        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/instagram.svg" alt="" /> Instagram
+      </a>
+      <a href="https://www.tiktok.com/@glvtech03" target="_blank" rel="noopener" aria-label="TikTok da GLVTECH">
+        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/tiktok.svg" alt="" /> TikTok
+      </a>
+      <a href="https://wa.me/5511940857403" target="_blank" rel="noopener" aria-label="WhatsApp da GLVTECH">
+        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/whatsapp.svg" alt="" /> WhatsApp
+      </a>
+    </div>
   </div>
-
-  <div class="grupo">
-    <h3>Montagem e Upgrades</h3>
-    <table>
-      <tr><td>Montagem de PC (mão de obra)</td><td>R$ 100 – 150</td></tr>
-      <tr><td>Upgrade de RAM ou SSD (instalação)</td><td>R$ 40 – 60</td></tr>
-      <tr><td>Troca de peças em geral</td><td>R$ 70 – 150</td></tr>
-      <tr><td>Consultoria para build personalizada</td><td>R$ 50*</td></tr>
-    </table>
-  </div>
-
-  <div class="grupo">
-    <h3>Notebooks</h3>
-    <table>
-      <tr><td>Troca de teclado (+ peça)</td><td>R$ 80 – 150</td></tr>
-      <tr><td>Troca de tela (+ peça)</td><td>R$ 100 – 200</td></tr>
-      <tr><td>Limpeza + troca de pasta térmica</td><td>R$ 80 – 120</td></tr>
-    </table>
-  </div>
-
-  <p class="nota">*Valor abatido do orçamento final caso o serviço seja fechado.</p>
-  <p class="nota">PIX à vista com 10% de desconto, ou cartão em até 10x sem juros.</p>
-
-  <a class="btn-whatsapp" href="contato.html">Solicitar orçamento</a>
-</section>
-
-<section class="social">
-  <h3>SIGA-NOS</h3>
-  <a href="https://www.instagram.com/glvtec/" target="_blank" aria-label="Instagram da GLVTECH">
-    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/instagram.svg" alt="">
-    Instagram
-  </a>
-</section>
-
-<footer>
-  © 2026 GLVTECH — Todos os direitos reservados
+  <div class="copy">© 2026 GLVTECH — Todos os direitos reservados</div>
 </footer>
+
 
 </body>
 </html>

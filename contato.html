@@ -3,228 +3,117 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>GLVTECH | Contato</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <style>
-    :root {
-      --azul: #1e88e5;
-      --preto: #111;
-      --cinza: #f2f2f2;
-    }
-
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Inter', sans-serif;
-    }
-
-    body {
-      background: var(--cinza);
-      color: var(--preto);
-    }
-
-    header {
-      background: #fff;
-      padding: 40px 20px 25px;
-      text-align: center;
-    }
-
-    header img {
-      max-width: 130px;
-      margin-bottom: 15px;
-    }
-
-    .menu {
-      margin-top: 20px;
-      display: flex;
-      justify-content: center;
-      gap: 30px;
-    }
-
-    .menu a {
-      text-decoration: none;
-      font-weight: 600;
-      color: var(--preto);
-      padding-bottom: 4px;
-    }
-
-    .menu a.active {
-      color: var(--azul);
-      border-bottom: 2px solid var(--azul);
-    }
-
-    section {
-      padding: 60px 20px;
-      max-width: 700px;
-      margin: auto;
-    }
-
-    h2 {
-      text-align: center;
-      color: var(--azul);
-      margin-bottom: 30px;
-    }
-
-    form {
-      background: #fff;
-      padding: 30px;
-      border-radius: 14px;
-      box-shadow: 0 5px 20px rgba(0,0,0,0.08);
-    }
-
-    label {
-      display: block;
-      font-weight: 600;
-      margin-bottom: 6px;
-      margin-top: 15px;
-    }
-
-    select, textarea {
-      width: 100%;
-      padding: 12px;
-      border-radius: 8px;
-      border: 1px solid #ccc;
-      resize: vertical;
-    }
-
-    button {
-      margin-top: 20px;
-      width: 100%;
-      background: var(--azul);
-      color: #fff;
-      border: none;
-      padding: 14px;
-      border-radius: 30px;
-      font-size: 1rem;
-      font-weight: 600;
-      cursor: pointer;
-      transition: background 0.3s ease, transform 0.2s ease;
-    }
-
-    button:hover {
-      background: #1565c0;
-      transform: scale(1.03);
-    }
-
-    footer {
-      background: var(--preto);
-      color: #fff;
-      text-align: center;
-      padding: 20px;
-      font-size: 0.9rem;
-      margin-top: 60px;
-    }
-
-    /* ====== SIGA-NOS ====== */
-.social {
-  text-align: center;
-  margin: 40px auto 0;
-}
-
-.social h3 {
-  font-size: 0.85rem;
-  letter-spacing: 1px;
-  margin-bottom: 15px;
-  color: var(--preto);
-}
-
-.social a {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  text-decoration: none;
-  color: var(--preto);
-  font-weight: 500;
-  font-size: 0.95rem;
-  transition: color 0.3s ease, transform 0.2s ease;
-}
-
-.social a img {
-  width: 18px;
-  height: 18px;
-}
-
-.social a:hover {
-  color: var(--azul);
-  transform: translateX(4px);
-}
-  </style>
+  <title>Solicitar orçamento | GLVTECH</title>
+  <meta name="description" content="Peça um orçamento de montagem de PC ou manutenção de computador e notebook em São Paulo. A mensagem chega direto no WhatsApp da GLVTECH." />
+  <link rel="canonical" href="https://glvtech.github.io/glvtech-page/contato.html" />
+  <link rel="icon" href="logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-<header>
-  <img src="logo.png" alt="GLVTECH Logo">
-  <nav class="menu">
-    <a href="index.html">Home</a>
-    <a href="portfolio.html">Portfólio</a>
-    <a href="precos.html">Preços</a>
-    <a href="contato.html" class="active">Contato</a>
-  </nav>
+<header class="topo">
+  <div class="wrap">
+    <a href="index.html" class="marca" aria-label="GLVTECH — início">
+      <img src="logo.png" alt="" />
+      <span>GLV<b>TECH</b></span>
+    </a>
+    <nav class="menu" aria-label="Principal">
+      <a href="index.html">Home</a>
+      <a href="portfolio.html">Portfólio</a>
+      <a href="precos.html">Preços</a>
+      <a href="contato.html" class="ativo">Contato</a>
+    </nav>
+    <a class="btn pequeno" href="contato.html">Pedir orçamento</a>
+  </div>
 </header>
 
-<section>
-  <h2>Solicitar Orçamento</h2>
+<main>
+  <section class="titulo-pagina">
+    <div class="wrap">
+      <h1>Solicitar orçamento</h1>
+      <p>Conte o que você precisa. Sua mensagem abre pronta no WhatsApp e eu respondo pessoalmente.</p>
+    </div>
+  </section>
 
-  <form onsubmit="enviarWhatsApp(event)">
-    <label for="servico">Tipo de serviço</label>
-    <select id="servico" required>
-      <option value="">Selecione um serviço</option>
-      <optgroup label="Manutenção">
-        <option value="Limpeza interna + pasta térmica (Desktop)">Limpeza interna + pasta térmica (Desktop)</option>
-        <option value="Limpeza interna + pasta térmica (Notebook)">Limpeza interna + pasta térmica (Notebook)</option>
-        <option value="Manutenção Preventiva">Manutenção Preventiva</option>
-        <option value="Manutenção Corretiva">Manutenção Corretiva</option>
-        <option value="Formatação + instalação de sistema">Formatação + instalação de sistema</option>
-        <option value="Backup e recuperação de dados">Backup e recuperação de dados</option>
-      </optgroup>
-      <optgroup label="Montagem e Upgrades">
-        <option value="Montagem de PC">Montagem de PC</option>
-        <option value="Upgrade de RAM ou SSD">Upgrade de RAM ou SSD</option>
-        <option value="Troca de peças em geral">Troca de peças em geral</option>
-        <option value="Consultoria para build personalizada">Consultoria para build personalizada</option>
-      </optgroup>
-      <optgroup label="Notebooks">
-        <option value="Troca de teclado">Troca de teclado</option>
-        <option value="Troca de tela">Troca de tela</option>
-        <option value="Limpeza + troca de pasta térmica (Notebook)">Limpeza + troca de pasta térmica (Notebook)</option>
-      </optgroup>
-      <option value="Outro">Outro</option>
-    </select>
+  <section class="secao">
+    <div class="wrap contato">
+      <form id="form-orcamento" novalidate>
+        <label for="nome">Seu nome</label>
+        <input id="nome" name="nome" type="text" autocomplete="given-name" placeholder="Como posso te chamar?" required />
 
-    <label for="descricao">Descreva sua necessidade</label>
-    <textarea id="descricao" rows="5" placeholder="Explique o que você precisa..." required></textarea>
+        <label for="servico">Tipo de serviço</label>
+        <select id="servico" name="servico" required>
+          <option value="">Selecione um serviço</option>
+          <option value="Montagem de PC">Montagem de PC</option>
+          <option value="Manutenção Preventiva">Manutenção preventiva</option>
+          <option value="Manutenção Corretiva">Manutenção corretiva</option>
+          <option value="Upgrade">Upgrade de peças</option>
+          <option value="Outro">Outro</option>
+        </select>
 
-    <button type="submit">Enviar para WhatsApp</button>
-  </form>
-</section>
+        <label for="descricao">Descreva sua necessidade</label>
+        <textarea id="descricao" name="descricao" placeholder="Ex.: meu notebook está lento e esquenta muito; ou quero um PC para jogar com orçamento de R$ 5.000." required></textarea>
 
-<section class="social">
-  <h3>SIGA-NOS</h3>
+        <button class="btn" type="submit">Enviar pelo WhatsApp</button>
+        <p class="nota" id="aviso" role="status">Você será levado ao WhatsApp para enviar a mensagem.</p>
+      </form>
 
-  <a href="https://www.instagram.com/glvtec/"
-     target="_blank"
-     aria-label="Instagram da GLVTECH">
-    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/instagram.svg" alt="">
-    Instagram
-  </a>
-</section>
+      <aside class="lateral">
+        <h2>Fale direto comigo</h2>
+        <ul>
+          <li><strong>Atendimento</strong>São Paulo, SP</li>
+          <li><strong>WhatsApp</strong><a href="https://wa.me/5511940857403" target="_blank" rel="noopener" style="color:var(--azul-escuro);font-weight:600;text-decoration:none">(11) 94085-7403</a></li>
+          <li><strong>Resposta</strong>Pessoal, sem robôs</li>
+        </ul>
+        <a class="btn" href="https://wa.me/5511940857403" target="_blank" rel="noopener">Abrir WhatsApp</a>
+      </aside>
+    </div>
+  </section>
+</main>
 
-<footer>
-  © 2026 GLVTECH — Todos os direitos reservados
+<footer class="rodape">
+  <div class="wrap">
+    <div>
+      <div class="marca"><img src="logo.png" alt="" /><span>GLV<b>TECH</b></span></div>
+      <p>Montagem e manutenção de computadores<br>em São Paulo, SP.</p>
+    </div>
+    <div class="redes">
+      <a href="https://www.instagram.com/glvtec/" target="_blank" rel="noopener" aria-label="Instagram da GLVTECH">
+        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/instagram.svg" alt="" /> Instagram
+      </a>
+      <a href="https://www.tiktok.com/@glvtech03" target="_blank" rel="noopener" aria-label="TikTok da GLVTECH">
+        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/tiktok.svg" alt="" /> TikTok
+      </a>
+      <a href="https://wa.me/5511940857403" target="_blank" rel="noopener" aria-label="WhatsApp da GLVTECH">
+        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/whatsapp.svg" alt="" /> WhatsApp
+      </a>
+    </div>
+  </div>
+  <div class="copy">© 2026 GLVTECH — Todos os direitos reservados</div>
 </footer>
 
 <script>
-  function enviarWhatsApp(e) {
+  document.getElementById('form-orcamento').addEventListener('submit', function (e) {
     e.preventDefault();
-    const servico = document.getElementById('servico').value;
-    const descricao = document.getElementById('descricao').value;
+    var nome = document.getElementById('nome').value.trim();
+    var servico = document.getElementById('servico').value;
+    var descricao = document.getElementById('descricao').value.trim();
+    var aviso = document.getElementById('aviso');
 
-    const mensagem = `Olá! Gostaria de um orçamento.%0A%0AServiço: ${servico}%0ADescrição: ${descricao}`;
-    const url = `https://wa.me/5511940857403?text=${mensagem}`;
+    if (!nome || !servico || !descricao) {
+      aviso.textContent = 'Preencha seu nome, o serviço e a descrição para continuar.';
+      aviso.style.color = '#c62828';
+      return;
+    }
 
-    window.open(url, '_blank');
-  }
+    var mensagem = 'Olá! Meu nome é ' + nome + ' e gostaria de um orçamento.\n\n' +
+                   'Serviço: ' + servico + '\n' +
+                   'Descrição: ' + descricao;
+    window.open('https://wa.me/5511940857403?text=' + encodeURIComponent(mensagem), '_blank');
+  });
 </script>
 
 </body>
