@@ -2,25 +2,25 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
   <url>
-    <loc>https://glvtech.github.io/glvtech-page/</loc>
+    <loc>https://glvtech.github.io/</loc>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
 
   <url>
-    <loc>https://glvtech.github.io/glvtech-page/portfolio.html</loc>
+    <loc>https://glvtech.github.io/portfolio.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://glvtech.github.io/glvtech-page/contato.html</loc>
+    <loc>https://glvtech.github.io/contato.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://glvtech.github.io/glvtech-page/precos.html</loc>
+    <loc>https://glvtech.github.io/precos.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
